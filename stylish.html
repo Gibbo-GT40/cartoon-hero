@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>stylish</title>
+    <link rel="stylesheet" href="stylish.css" rel="text/css">
+    <style type="text/css">
+        .small{ 
+            font-size: 20px;
+        }
+        h1 {
+            color: green;
+            font-size: 70px;
+        }
+        #first {
+            color: yellow;
+        }
+        span {
+            text-decoration: underline;   
+        }
+        h2 span {
+            text-decoration: underline overline;   
+        }
+        h2 {
+            text-decoration: overline;   
+        }
+    </style>
+    
+    <meta name="generator" content="BBEdit 12.6" />
+</head>
+<body>
+<p>Style in the tag overwrites page styles</p>
+<p>Within the page style, ID overwrites Class overwrites Tag</p>
+<p>Style settings are cummulative where they dont clash.<br>
+Where they clash, closet to the element wins</p>
+<h1 ID="first">Heading 1 - styled by ID, label unique to a single element per page</h1>
+<h1 class="small">Heading 1 - 2 styled by class</h1>
+<h1 style="color:red; font-size: 90px">Heading 1 - <span>styled in tag</span></h1>
+
+<h2>Heading 2 - purple from CSS file but overline from page style</h1>
+<h2>Heading 2 - 2</h1>
+<h2 style="color:red; font-size: 30px">Heading 2 - <span>specific span style</span></h1>
+<br>
+
+</body>
+</html>
